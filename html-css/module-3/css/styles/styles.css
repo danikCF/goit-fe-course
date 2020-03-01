@@ -14,16 +14,14 @@
 .header__nav-item{
     display: inline-block;
     font-size: 14px;
-    padding: 5px 40px;
-
 }
 .header__nav-link{
     color: #626262;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 5px 40px;
 }
-.header__nav-link_active,
-.header__nav-link_active:hover{
+.header__nav-link_active:hover {
     color: #03a9f4;
 }
 .blockposts {
@@ -51,7 +49,7 @@
 
  img {
     width: 100%;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,19 +59,16 @@
     text-transform: uppercase;
     color:#b4ad9e;
     line-height: 1;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-bottom: 30px;
     font-family: Ubuntu-Light;
 }
 .blockpost__heading{
     font-size:30 px;
     line-height: 1;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    margin-bottom: 40px;
 }
 .blockpost__text{
     line-height: 1.6;
-    padding-top: 20px;
     font-size: 14px;
 }
 .btn-wrap {
@@ -88,4 +83,7 @@
     color: #626262;
     font-size: 20px;
     font-family: serif;
+}
+.btn:hover{
+    color:black;
 }
