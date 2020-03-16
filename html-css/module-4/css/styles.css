@@ -11,6 +11,7 @@ body{
     padding-top: 77px;
     padding-bottom: 65px;
 }
+
 .wrapper {
     width: 100%;
     max-width: 1160px;
@@ -147,10 +148,10 @@ margin-bottom: 0;
     margin-bottom: 10px;
 }
 .news__title{
-    font-size: 18;
+    font-size: 18px;
     text-align: left;
     color: #555252;
-    font-weight: 500px;
+    font-weight: 500;
     margin: 0;
 }
 .news__title::after{
@@ -162,7 +163,6 @@ margin-bottom: 0;
     background-color: #1abc9c;
 }
 .news__text {
-    padding-top: 15px;
     font-size: 14px;
     line-height: 26px;
     font-size: 14px;
