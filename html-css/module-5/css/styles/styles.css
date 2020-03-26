@@ -41,12 +41,13 @@ body {
 }
 .header__logo {
     float: left;
-    vertical-align: middle;
     color: #555252;
     font-family: 'Roboto', Helvetica, sans-serif;
     font-size: 30px;
     line-height: 1;
     text-transform: uppercase;
+    text-decoration: none;
+    display: block;
 }
 
 .header__logo::first-letter {
@@ -82,6 +83,7 @@ li {
     text-transform: uppercase;
     text-decoration: none;
     list-style-type: none; 
+    display: block;
 }
 .header__nav-link:hover {
     color: var(--blue-color);
@@ -163,8 +165,8 @@ svg{
     text-transform: uppercase;
 }
 .h2 {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-top: 0;
+    margin-bottom: 60px;
     color: #515151;
     font-family: var(--secondary-font);
     font-size: 48px;
@@ -172,7 +174,6 @@ svg{
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
-    margin: 0;
 }
 
 .h2::after {
@@ -185,6 +186,7 @@ svg{
 }
 
 .sc {
+    padding-top: 75px;
     padding-bottom: 75px;
     background-color: #E9F0FD;
 }
@@ -193,7 +195,6 @@ svg{
     float: left;
     width: 256px;
     margin-right: 25px;
-    margin-bottom: 30px;
     cursor: pointer;
 }
 
@@ -264,7 +265,7 @@ display: block;
 .product__actions-link {
     color: #fff;
     text-transform: uppercase;
-    vertical-align: middle;
+    display: block;
     text-decoration: none;
 }
 .product__actions-link-text {

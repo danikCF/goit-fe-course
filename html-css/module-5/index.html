@@ -11,14 +11,11 @@
 </head>
 <body>
     <header class="header clearfix">
-        <div class="container">
-            <span class="header__logo" >
-                Mart
-            </span>
-
+        <div class="container clearfix">
+            <a class="header__logo" href="">Mart</a> 
             <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item clearfix">
+                <ul class="header__nav-list clearfix">
+                    <li class="header__nav-item">
                         <a class="header__nav-link header__nav-link_active" target="_blank" href="#home">home</a>
                     </li>
                     <li class="header__nav-item">
@@ -82,11 +79,40 @@
                     </h2>
                     <ul class="products__list clearfix">
                         <li class="products__item">
-                            <img class="products__cover" src="image/1.jpg" alt="">
+                            <div class="products__cover-wrap">
+                                <img class="products__cover" src="image/1.jpg" alt="">
+    
+                                <div class="product__actions-window">
+                                    <ul class="product__actions-list">
+                                        <li class="product__actions-item">
+                                            <span class="product__actions-link">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                        </li>
+                                        <li class="product__actions-item">
+                                            <span class="product__actions-link">
+                                                <i class="fas fa-random"></i>
+                                            </span>
+                                        </li>
+                                        <li class="product__actions-item">
+                                            <span class="product__actions-link">
+                                                <i class="far fa-clock"></i>
+                                            </span>
+                                        </li>
+                                        <li class="product__actions-item">
+                                            <span class="product__actions-link">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <span class="product__actions-link-text">ADD TO Cart</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <div class="products__desc clearfix">
-                                <span class="products__name">Blue T-shirt</span>
+                                <span class="products__name">blue tshirt</span>
                                 <span class="products__price">$26</span>
-                            </li>
+                            </div>
+                        </li>
                         <li class="products__item">
                             <div class="products__cover-wrap">
                                 <img class="products__cover" src="image/2.jpg" alt="">
@@ -94,25 +120,25 @@
                                 <div class="product__actions-window">
                                     <ul class="product__actions-list">
                                         <li class="product__actions-item">
-                                            <a href="" class="product__actions-link">
+                                            <span class="product__actions-link">
                                                 <i class="far fa-heart"></i>
-                                            </a>
+                                            </span>
                                         </li>
                                         <li class="product__actions-item">
-                                            <a href="" class="product__actions-link">
+                                            <span class="product__actions-link">
                                                 <i class="fas fa-random"></i>
-                                            </a>
+                                            </span>
                                         </li>
                                         <li class="product__actions-item">
-                                            <a href="" class="product__actions-link">
+                                            <span class="product__actions-link">
                                                 <i class="far fa-clock"></i>
-                                            </a>
+                                            </span>
                                         </li>
                                         <li class="product__actions-item">
-                                            <a href="" class="product__actions-link">
+                                            <span class="product__actions-link">
                                                 <i class="fas fa-shopping-cart"></i>
                                                 <span class="product__actions-link-text">ADD TO Cart</span>
-                                            </a>
+                                            </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -122,20 +148,77 @@
                                 <span class="products__price">$31</span>
                             </div>
                         </li>
-                                        <li class="products__item">
-                                            <img class="products__cover" src="image/3.jpg" alt="">
-                                            <div class="products__desc clearfix">
-                                                <span class="products__name">YellowTShirt</span>
-                                                <span class="products__price">$21</span>
-                                            </div>
+                        <li class="products__item">
+                            <div class="products__cover-wrap">
+                                <img class="products__cover" src="image/3.jpg" alt="">
+    
+                                <div class="product__actions-window">
+                                    <ul class="product__actions-list">
+                                        <li class="product__actions-item">
+                                            <span class="product__actions-link">
+                                                <i class="far fa-heart"></i>
+                                            </span>
                                         </li>
-                                        <li class="products__item">
-                                            <img class="products__cover" src="image/4.jpg" alt="">
-                                            <div class="products__desc clearfix">
-                                                <span class="products__name">Cool Lingerie</span>
-                                                <span class="products__price">$56</span>
-                                            </div>
+                                        <li class="product__actions-item">
+                                            <span class="product__actions-link">
+                                                <i class="fas fa-random"></i>
+                                            </span>
                                         </li>
+                                        <li class="product__actions-item">
+                                            <span class="product__actions-link">
+                                                <i class="far fa-clock"></i>
+                                            </span>
+                                        </li>
+                                        <li class="product__actions-item">
+                                            <span class="product__actions-link">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <span class="product__actions-link-text">ADD TO Cart</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="products__desc clearfix">
+                                <span class="products__name">yellow tshirt</span>
+                                <span class="products__price">$21</span>
+                            </div>
+                        </li>
+                        <li class="products__item">
+                            <div class="products__cover-wrap">
+                                <img class="products__cover" src="image/4.jpg" alt="">
+    
+                                <div class="product__actions-window">
+                                    <ul class="product__actions-list">
+                                        <li class="product__actions-item">
+                                            <span class="product__actions-link">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                        </li>
+                                        <li class="product__actions-item">
+                                            <span class="product__actions-link">
+                                                <i class="fas fa-random"></i>
+                                            </span>
+                                        </li>
+                                        <li class="product__actions-item">
+                                            <span class="product__actions-link">
+                                                <i class="far fa-clock"></i>
+                                            </span>
+                                        </li>
+                                        <li class="product__actions-item">
+                                            <span class="product__actions-link">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <span class="product__actions-link-text">ADD TO Cart</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="products__desc clearfix">
+                                <span class="products__name">cool lingerie</span>
+                                <span class="products__price">$56</span>
+                            </div>
+                        </li>
+                                       
                                     </ul>
                                 </div>
             </section>
