@@ -214,6 +214,7 @@ width: 100%;
 display: block;
 }
 .product__actions-window {
+    position: S;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -227,17 +228,7 @@ display: block;
 .products__item:hover .product__actions-window {
     opacity: 1;
 }
-.product__actions-list {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 166px;
-    height: 107px;
-    margin: auto;
-}
-.product__actions-item {
+.product__actions-button {
     position: relative;
     float: left;
     width: 50px;
@@ -248,42 +239,47 @@ display: block;
     text-align: center;
     transition: 0.35s;
 }
-.product__actions-item:nth-child(n+3) {
-    margin-right: 0;
-}
-
-.product__actions-item:nth-child(4) {
-    width: 100%;
-    margin-top: 8px;
-    background-color: #323232;
-}
-
-.product__actions-item:hover {
-    background-color: var(--blue-color);
-    border-color: var(--blue-color);
-}
-.product__actions-link {
-    color: #fff;
-    text-transform: uppercase;
-    display: block;
-    text-decoration: none;
-}
-.product__actions-link-text {
-    padding-left: 5px;
-    user-select: none;
-}
-.product__actions-link .far {
-    font-size: 30px;
-    line-height: 48px;
-    vertical-align: middle;
-}
-.fa-random{
+.for__centering{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+}
+.product__actions-button:nth-child(n+3) {
+    margin-right: 0;
+}
+
+.product__actions-button:nth-child(4) {
+    width: 166px;
+    margin-top: 8px;
+    background-color: #323232;
+}
+
+.product__actions-button:hover {
+    background-color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+.product__actions-button {
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+i{
     font-size: 30px;
     line-height: 40px;
+    vertical-align: middle;
+}
+.product__button-text {
+    padding-left: 5px;
+    user-select: none;
+}
+.random{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .products__desc {
     background-color:#323232;
