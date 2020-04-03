@@ -3,7 +3,7 @@
     justify-content: space-between;
     width: 100%;
     max-width: 1193px;
-    margin: auto;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 .header{
@@ -16,6 +16,7 @@
     font-size: 25px;
     font-weight: 600;
     text-decoration: none;
+    display: block;
 }
 .header__nav__list{
     display: flex;
@@ -27,6 +28,7 @@
     margin-right: 0;
 }
 .header__nav-link{
+    display: block;
     font-family: 'Montserrat', sans-serif;
     color: #95E1D3 ;
     font-weight: 600;
@@ -51,27 +53,22 @@
 .header__nav-link:hover{
     color: #F38181;
 }
-.section1,
-.section2{
+.section{
     width: 100%;
     max-width: 1193px;
-    margin: auto;
+    margin: 0 auto;
     box-sizing: border-box;
 
 }
-.section1__title,
-.section2__title{
+.section__title{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     color: #333333;
 }
-.section1__title2,
-.section2__title2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.section__title2{
     font-family:'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 800;
@@ -80,16 +77,7 @@
     padding-top: 15px;
     margin-bottom: 50px;
 }
-.section1__title2::after {
-    content: '';
-    display:flex;
-    flex-direction: column;
-    width: 61px;
-    height: 4px;
-    margin: 30px auto 0;
-    background-color: #F38181;
-}
-.section2__title2::after {
+.section__title2::after {
     content: '';
     display:flex;
     flex-direction: column;
@@ -163,6 +151,7 @@ p{
     position: relative;
     box-shadow: 0 0 #95E1D3;
     transition: all 200ms linear;
+    margin-bottom: 15px;
 }
 .team__photoes:hover .container__img{
     transform: translate(-10px,-10px);
@@ -209,10 +198,12 @@ p{
     background-color: #95E1D3;
 }
 .window__link{
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    background-image: url('/image/facebook@1X.png');
 }
 
 
@@ -222,7 +213,7 @@ p{
     text-align: center;
     color: #333333;
     text-transform: uppercase;
-    padding-top: 30px;
+    margin-bottom: 15px;
 }
 .job{
     font-family:'Roboto', sans-serif;
@@ -230,7 +221,6 @@ p{
     text-align: center;
     color: #999999;
     font-style: oblique;
-    padding-top: 15px;
 }
 .last__word{
     color: #F38181;
