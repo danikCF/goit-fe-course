@@ -20,6 +20,7 @@ html {
     box-sizing: border-box;
 }
 .logo{
+    display: block;
     text-decoration: none;
     color: #fed136;
     text-transform: uppercase;
@@ -31,6 +32,7 @@ html {
     width: 480px;
 }
 .link{
+    display: block;
     text-decoration: none;
     color: #222222;
     font-family: 'Montserrat';
@@ -47,21 +49,22 @@ html {
     padding-bottom: 90px;
 }
 .section{
+    padding-top: 95px;
+    padding-bottom: 85px;
     width: 1160px;
     max-width: 100%;
     box-sizing: border-box;
     margin: auto;
-    padding-bottom: 85px;
 }
 .title{
-    padding-top: 95px;
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
     font-family: 'Roboto Slab';
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 .title__text{
-    padding-top: 15px;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
@@ -69,17 +72,17 @@ html {
 }
 .product__list{
     display: flex;
+    justify-content: center;
 
 }
 .product__item{
     text-align: center;
     width: 275px;
-    margin: auto;
-    padding-top: 60px;
-    
+    margin-right: 55px;
+    margin-top: 60px;
 }
-.product__item:not(:last-child){
-    margin-right: 30px;
+.product__item:last-child{
+    margin-right: 0;
 }
 .product__item::before{
     display: inline-block;
@@ -108,30 +111,28 @@ html {
 .product__name{
     font-size: 18px;
     color: #222222;
-    padding-top: 28px;
+    margin-top: 28px;
     font-family: 'Montserrat';
-    font-weight: 500;
+    font-weight: 700;
 }
 .product__text{
     color: #777777;
     font-size: 14px;
-    padding-top: 18px;
+    margin-top: 18px;
 }
 .section2{
-    position: relative;
-    height: 660px;
-
+    padding-top: 85px;
+    padding-bottom: 40px;
+}
+.bckgrnd__section{
+    background-color: #222222;
+    background-image: url('../css/img/Map-Image.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 .container1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url('../css/img/Map-Image2.png');
-    background-size: 100%;
-    background-position: top center;
-    width: 100%;
-    height: 100%;
-    padding-top: 85px;
+    width: 960px;
+    margin: 0 auto;
     text-align: center;
     color: #fff;
     padding-left: 15px;
@@ -141,53 +142,47 @@ html {
     text-transform: uppercase;
     font-size: 40px;
     font-family: 'Roboto Slab';
+    font-weight: 600;
 }
 .title__text2{
-    padding-top: 25px;
+    margin-top: 25px;
     color: #777777;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
 }
-.contuct__us__form{
+.div__input{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-
-}
-.input__wrapper{
-    display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     flex-wrap: wrap;
-    height: 110px;
-    width: 960px;
-    justify-content: space-between;
-    margin: 0 auto;
-    margin-top: 55px;
-    
+    height: 200px;
+    margin-top: 48px;
 }
 .input1, .textarea1{
     width: 48.5%;
-    padding: 6px 16px;
     box-sizing: border-box;
     border: 1px solid #eee;
     border-radius: 4px;
     outline: 0;
+    padding: 10px 16px;
 }
 .textarea1{
-    height: 100%;
-    margin-left: 3%;
+    height: 170px;
 }
 .submit{
     margin-top: 25px;
     padding: 20px 35px;
     border: 0;
     border-radius: 4px;
-    background-color:#fed136;
+    background-color: #777777;
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all 200ms linear;
     font-family: 'Montserrat';
+}
+.submit:hover{
+    background-color:#fed136;
 }
 [required]:not(:placeholder-shown):valid{
     box-shadow:0 0 0 2px green;
