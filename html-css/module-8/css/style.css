@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+    }
+    
+    *,
+    *::before,
+    *::after {
+    box-sizing: inherit;
+    }
+::selection {
+        background-color: #000;
+        color: #fff;   
+}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header__inner {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__container{
+    position: relative;
+    padding: 20px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    
+}
+.logo{
+    display: block;
+    margin-top: 115px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link {
+    display: block;
+    padding: 11px 19px 12px;
+    border: 3px solid transparent;
+    border-radius: 21px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: border-color 0.35s;
+}
+
+.link:hover {
+    border-color: #fff;
+}
+.section{
+    position: relative;
+    min-height: 150vh;
+    padding: 229px 0 104px;
+    box-sizing: border-box;
+}
+.section__container{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../css/img/good-company.png');
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.8);
+    width: 100%;
+    height: 100%;
+}
+.section__container.active{
+    display: block;
+
+}
+.section__wrap{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.title {
+    max-width: 280px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+    
+.title__text {
+    max-width: 217px;
+    margin: 0 auto;
+    padding-top: 19px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+}
+.title__link{
+    display: flex;
+    justify-content: center;
+    padding: 11px 23px 12px;
+    border: 2px solid #ff4e50;
+    border-radius: 22px;
+    background-color: #ff4e50;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
