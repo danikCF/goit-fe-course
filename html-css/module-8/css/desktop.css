@@ -27,11 +27,13 @@
         margin: auto;
         margin-top: 20px;
     }
+    .container2{
+        max-width: 1440px;
+    }
     .title2{
         
         min-width: 400px;
         margin: 0 auto;
-        
     }
     .team__for-meet{
         display: flex;
