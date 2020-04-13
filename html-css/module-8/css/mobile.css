@@ -73,29 +73,21 @@ html {
     position: relative;
     min-height: 100vh;
     padding-bottom: 35px;
-}
-.section__container{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
     background-image: url('../css/img/good-company.png');
     background-position: center;
     background-size: cover;
-    filter: brightness(0.8);
     width: 100%;
     height: 100%;
-}
-.section__container.active{
-    display: block;
-
+    filter: brightness(0.8);
 }
 .container{
+    max-width: 290px;
     position: absolute;
     top: 70%;
-    left: 0;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
     width: 100%;
+    z-index: 2;
 }
 
 .title {
@@ -110,6 +102,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     margin-bottom: 20px;
+    opacity: 1;
 }
     
 .title__text {
@@ -147,6 +140,7 @@ html {
 .section2{
     min-height: 150vh;
     padding-bottom: 35px;
+    padding-top: 35px;
 }
 .container2{
     max-width: 290px;
@@ -169,7 +163,7 @@ html {
     margin-top: 12px;
     text-align: center;
 }
-.avatar{
+.avatar__first{
     position: relative;
     width: 122px;
     height: 122px;
@@ -179,10 +173,38 @@ html {
     border-radius: 50%;
     margin: auto;
 }
-.first{
-    background-image: url('../css/img/partner-1.png');
+.avatar__second{
+    position: relative;
+    width: 122px;
+    height: 122px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
 }
- .first::after{
+.avatar__third{
+    position: relative;
+    width: 122px;
+    height: 122px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+.avatar__fourth{
+    position: relative;
+    width: 122px;
+    height: 122px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.avatar__first::after{
     content: '';
     position: absolute;
     width: 34px;
@@ -196,10 +218,8 @@ html {
     border-radius: 50%;
     border: 4px solid #fff;
 }
-.second{
-    background-image: url('../css/img/partner-2.png');
-}
- .second::after{
+
+ .avatar__second::after{
     content: '';
     position: absolute;
     width: 34px;
@@ -213,11 +233,7 @@ html {
     border-radius: 50%;
     border: 4px solid #fff;
 }
-
-.third{
-    background-image: url('../css/img/partner-3.png');
-}
-.third::after{
+.avatar__third::after{
     content: '';
     position: absolute;
     width: 34px;
@@ -232,11 +248,7 @@ html {
     border: 4px solid #fff;
 }
 
-.fourth{
-    background-image: url('../css/img/partner-4.png');
-
-}
-.fourth::after{
+.avatar__fourth::after{
     content: '';
     position: absolute;
     width: 34px;

@@ -1,6 +1,6 @@
-@media (min-width: 960px) {
+@media (min-width: 768px) {
     header.container{
-        max-width: 940px;
+        max-width: 748px;
     }
     .header__inner{
         flex-direction: row;
@@ -10,12 +10,12 @@
     .logo{
         margin: 0;
     }
-    .section2{
-        min-height: 100vh;
-        margin: auto;
-    }
     .title__text{
         max-width: 477px;
+    }
+    .container{
+        max-width: 748px;
+        top: 50%;
     }
     .section__wrap{
         top: 50%;
@@ -25,8 +25,12 @@
         margin: auto;
         margin-top: 20px;
     }
+    .section2{
+        min-height: 100vh;
+        margin: auto;
+    }
     .container2{
-        max-width: 895px;
+        max-width:748px;
         margin: auto;
     }
     .title2{
@@ -39,7 +43,7 @@
         margin: auto;
     }
     .person{
-        width: 300px;
+      width: 250px;
     }
     .link__person{
         max-width: 226px;
@@ -49,13 +53,10 @@
     .name{
         text-align: center;
         margin: auto;
+        margin-top: 15px;
     }
     .summary{
         margin: auto;
+        margin-top: 15px;
     }
-    .avatar{
-        margin: auto;
-
-    }
-  
 }

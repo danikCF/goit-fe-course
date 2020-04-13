@@ -1,6 +1,9 @@
-@media (min-width: 1460px) {
+@media (min-width: 960px) {
+    html{
+        max-width: 100%;
+    }
     header.container{
-        max-width: 1440px;
+        max-width: 940px;
     }
     .header__inner{
         flex-direction: row;
@@ -9,6 +12,10 @@
     }
     .logo{
         margin: 0;
+    }
+    .container{
+        max-width: 940px;
+        top: 50%;
     }
     .section2{
         display: flex;
@@ -28,18 +35,15 @@
         margin-top: 20px;
     }
     .container2{
-        max-width: 1440px;
+        max-width: 940px;
+    }
+    .person{
+        width: 200px;
     }
     .title2{
         
         min-width: 400px;
         margin: 0 auto;
-    }
-    .team__for-meet{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        margin-top: 16px;
     }
     .link__person{
         max-width: 226px;
