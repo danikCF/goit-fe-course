@@ -155,7 +155,7 @@ html {
     text-align: center;
     font-size: 22px;
     color: #333333;
-    width: 245px;
+    max-width: 245px;
     margin: auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;

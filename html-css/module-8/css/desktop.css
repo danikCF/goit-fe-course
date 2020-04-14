@@ -1,6 +1,6 @@
 @media (min-width: 960px) {
-    html{
-        max-width: 100%;
+    .link{
+        font-size: 25px;
     }
     header.container{
         max-width: 940px;
@@ -12,6 +12,7 @@
     }
     .logo{
         margin: 0;
+        font-size: 25px;
     }
     .container{
         max-width: 940px;
@@ -22,6 +23,7 @@
         flex-direction: column;
         justify-content: space-between;
         min-height: 50vh;
+        padding-top: 15px;
     }
     .title__text{
         max-width: 397px;
@@ -29,26 +31,44 @@
     .section__wrap{
         top: 50%;
     }
+    .title{
+        font-size: 35px;
+        max-width: 350px;
+    }
+    .title__text{
+        font-size: 30px;
+        max-width: 550px;
+    }
     .title__link{
         max-width: 226px;
         margin: auto;
         margin-top: 20px;
+        font-size: 20px;
+        max-width: 300px;
     }
     .container2{
         max-width: 940px;
+        font-size: 25px;
     }
     .person{
         width: 200px;
     }
     .title2{
-        
-        min-width: 400px;
+        font-size: 35px;
+        max-width: 700px;
         margin: 0 auto;
     }
     .link__person{
         max-width: 226px;
         margin: auto;
         margin-top: 20px;
-
+        font-size: 20px;
+        max-width: 300px;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .summary{
+        font-size: 20px;
     }
 }
