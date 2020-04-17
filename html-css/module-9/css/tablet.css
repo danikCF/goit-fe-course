@@ -1,11 +1,10 @@
 @media (min-width: 768px) {
-    header.container{
-        max-width: 748px;
-    }
     .header__inner{
         flex-direction: row;
         justify-content: space-around;
-
+    }
+    .centering{
+        max-width: 748px;
     }
     .logo{
         margin: 0;
