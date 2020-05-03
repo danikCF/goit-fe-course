@@ -1,4 +1,5 @@
 
+
 html {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -349,6 +350,13 @@ p{
     -webkit-transform: translate(-50%,-50%);
         -ms-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
+}
+.window__icon{
+    fill:#f38181;
+}
+.our__team__social__items:hover .window__icon{
+    fill: #fff;
+  
 }
 .name{
     font-family:'Montserrat', sans-serif;

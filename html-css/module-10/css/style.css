@@ -283,6 +283,13 @@ p{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.window__icon{
+    fill:#f38181;
+}
+.our__team__social__items:hover .window__icon{
+    fill: #fff;
+  
+}
 .name{
     font-family:'Montserrat', sans-serif;
     font-size: 14px;
