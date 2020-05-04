@@ -165,21 +165,24 @@ ul{
 .img__icon{
     margin: 0;
 }
-.section1__items{
+.services__items{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 60px;
 }
-.section1__icons:nth-child(-n+3){
-    margin-bottom: 50px;
-}
-.section1__icons{
+.services__icon--alarm,
+.services__icon--line,
+.services__icon--computer,
+.services__icon--book,
+.services__icon--home,
+.services__icon--image {
     position: relative;
     width: 330px;
     padding-left: 60px;
+    margin-bottom: 50px;
 }
-.section1__icon{
+.services__icon{
     position: absolute;
     top: 15px;
     left: 15px;
@@ -191,7 +194,7 @@ ul{
 
 
 
-.section1__icon__title{
+.services__icon__title{
     margin-bottom: 10px;
     color: #333333;
     font-family:'Montserrat', sans-serif;
@@ -199,7 +202,7 @@ ul{
     font-size: 14px;
     font-weight: 500;
 }
-.section1__icon__text{
+.services__icon__text{
     color: #999999;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -259,10 +262,13 @@ p{
 .team__photoes:hover .window__anim{
     opacity: 1;
 }
-.our__team__itmes{
+.our__team__items{
     display: flex;
 }
-.our__team__social__items{
+.our__team__social__item--facebook,
+.our__team__social__item--twitter,
+.our__team__social__item--inst,
+.our__team__social__item--pinterest {
     position: relative;
     width: 57px;
     height: 57px;
@@ -273,7 +279,10 @@ p{
 .our__team__social__items:last-child{
     margin-right: 0;
 }
-.our__team__social__items:hover{
+.our__team__social__item--facebook:hover,
+.our__team__social__item--twitter:hover,
+.our__team__social__item--inst:hover,
+.our__team__social__item--pinterest:hover{
     background-color: #F38181;
 }
 .window__link{
@@ -283,14 +292,20 @@ p{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.window__icon{
+.window__icon--facebook,
+.window__icon--twitter,
+.window__icon--instagram,
+.window__icon--pinterest{
     fill:#f38181;
 }
-.our__team__social__items:hover .window__icon{
+.window__icon--facebook:hover,
+.window__icon--pinterest:hover,
+.window__icon--instagram:hover,
+.window__icon--twitter:hover {
     fill: #fff;
   
 }
-.name{
+.item__name{
     font-family:'Montserrat', sans-serif;
     font-size: 14px;
     text-align: center;
@@ -298,7 +313,7 @@ p{
     text-transform: uppercase;
     margin-bottom: 15px;
 }
-.job{
+.item__job{
     font-family:'Roboto', sans-serif;
     font-size: 15px;
     text-align: center;
@@ -309,25 +324,23 @@ p{
     color: #F38181;
 }
 .footer{
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     border-top: 1px solid #E5E5E5;
     width: 1200px;
     margin: 0 auto;
     padding-top: 10px;
 }
 .footer__text{
-    position: absolute;
-    top: 45%;
+    display: flex;
+    align-items: center;
     vertical-align: middle;
     color: #333333;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
 }
 .forms{
-    display: flex;
-    justify-content: flex-end;
     margin-left: 0 auto;
-    align-self: center;
     padding-bottom: 5px;
 }
 .placeholder{
