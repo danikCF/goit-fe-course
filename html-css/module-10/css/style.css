@@ -101,26 +101,26 @@ ul{
     font-weight: 800;
     text-transform: uppercase;
     color: #fff;
-    padding-top: 15px;
+    margin-top: 15px;
     max-width: 802px;
     text-align: center;
 }
 .section0__button{
     display: flex;
     justify-content: center;
-   padding-top: 16px;
-   padding-bottom: 16px;
-   border: 3px solid #fff;
-   font-size: 14px;
-   text-transform: uppercase;
-   color: #fff;
-   text-decoration: none;
-   font-weight: 600;
-   width: 161px;
-   margin: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 3px solid #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    width: 161px;
+    margin: auto;
 }
 .section0__button-centering{
-    padding-top: 123px;
+    margin-top: 123px;
     padding-bottom: 231px;
 }
 .section{
@@ -137,7 +137,6 @@ ul{
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     color: #333333;
-    margin-bottom: 50px
 }
 .section__title2{
     font-family:'Montserrat', sans-serif;
@@ -145,7 +144,7 @@ ul{
     font-weight: 800;
     text-transform: uppercase;
     color: #333333;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 .section__title2::after {
     content: '';
@@ -165,18 +164,13 @@ ul{
 .img__icon{
     margin: 0;
 }
-.services__items{
+.services__list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
-.services__icon--alarm,
-.services__icon--line,
-.services__icon--computer,
-.services__icon--book,
-.services__icon--home,
-.services__icon--image {
+.services__item{
     position: relative;
     width: 330px;
     padding-left: 60px;
@@ -191,9 +185,6 @@ ul{
     width: 40px;
     height: 40px;
 }
-
-
-
 .services__icon__title{
     margin-bottom: 10px;
     color: #333333;
@@ -220,30 +211,30 @@ p{
     padding-left: 100px;
     margin: 0 auto;
 }
-.team__items{
+.team__list{
     display: flex;
     justify-content: space-evenly;
     padding-top: 22px;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
-.team__photoes{
+.team__item{
     width: 333px;
 }
-.container__img{
+.team__container{
     position: relative;
     box-shadow: 0 0 #95E1D3;
     transition: all 200ms linear;
     margin-bottom: 15px;
 }
-.team__photoes:hover .container__img{
+.team__item:hover .team__container{
     transform: translate(-10px,-10px);
     box-shadow: 10px 10px #95E1D3;
 }
-.img__team{
+.team__container--img{
     display: block;
     width: 333px;
 }
-.window__anim{
+.team__container--card{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -255,55 +246,43 @@ p{
     opacity: 0;
     transition: all 200ms linear;
 }
-.window__anim:hover{
+.team__container--card:hover{
     background: linear-gradient(45deg, rgba(221, 224, 10, 0.8), rgba(221, 6, 24, 0.5));
     background-size: cover;
 }
-.team__photoes:hover .window__anim{
+.team__item:hover .team__container--card{
     opacity: 1;
 }
-.our__team__items{
+.team__card--list{
     display: flex;
 }
-.our__team__social__item--facebook,
-.our__team__social__item--twitter,
-.our__team__social__item--inst,
-.our__team__social__item--pinterest {
+.team__card--item {
     position: relative;
     width: 57px;
     height: 57px;
     background-color: #FCE38A;
     margin-right: 1px;
     transition: all 200ms linear;
+    cursor: pointer;
 }
-.our__team__social__items:last-child{
+.team__card--item:last-child{
     margin-right: 0;
 }
-.our__team__social__item--facebook:hover,
-.our__team__social__item--twitter:hover,
-.our__team__social__item--inst:hover,
-.our__team__social__item--pinterest:hover{
+.team__card--item:hover{
     background-color: #F38181;
 }
-.window__link{
+.team__card--link{
     display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.window__icon--facebook,
-.window__icon--twitter,
-.window__icon--instagram,
-.window__icon--pinterest{
-    fill:#f38181;
+.team__card--icon{
+    fill: #F38181;
 }
-.window__icon--facebook:hover,
-.window__icon--pinterest:hover,
-.window__icon--instagram:hover,
-.window__icon--twitter:hover {
+.team__card--item:hover .team__card--icon {
     fill: #fff;
-  
 }
 .item__name{
     font-family:'Montserrat', sans-serif;
