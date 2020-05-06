@@ -123,14 +123,16 @@ ul{
     margin-top: 123px;
     padding-bottom: 231px;
 }
-.section{
+.services,
+.team{
     width: 100%;
     max-width: 1193px;
     margin: 0 auto;
     box-sizing: border-box;
 
 }
-.section__title{
+.services__title,
+.team__title{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,7 +140,8 @@ ul{
     font-size: 24px;
     color: #333333;
 }
-.section__title2{
+.services__title2,
+.team__title2{
     font-family:'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 800;
@@ -146,7 +149,8 @@ ul{
     color: #333333;
     margin-top: 15px;
 }
-.section__title2::after {
+.services__title2::after,
+.team__title2::after{
     content: '';
     display:flex;
     flex-direction: column;
@@ -201,7 +205,7 @@ ul{
 p{
     margin: 0;
 }
-.section2_title-text{
+.team__title-text{
     color: #999999;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -214,8 +218,6 @@ p{
 .team__list{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 22px;
-    margin-bottom: 60px;
 }
 .team__item{
     width: 333px;
@@ -230,11 +232,11 @@ p{
     transform: translate(-10px,-10px);
     box-shadow: 10px 10px #95E1D3;
 }
-.team__container--img{
+.team__img{
     display: block;
     width: 333px;
 }
-.team__container--card{
+.team__card{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -246,11 +248,11 @@ p{
     opacity: 0;
     transition: all 200ms linear;
 }
-.team__container--card:hover{
+.team__card:hover{
     background: linear-gradient(45deg, rgba(221, 224, 10, 0.8), rgba(221, 6, 24, 0.5));
     background-size: cover;
 }
-.team__item:hover .team__container--card{
+.team__item:hover .team__card{
     opacity: 1;
 }
 .team__card--list{
@@ -284,7 +286,7 @@ p{
 .team__card--item:hover .team__card--icon {
     fill: #fff;
 }
-.item__name{
+.team__card--name{
     font-family:'Montserrat', sans-serif;
     font-size: 14px;
     text-align: center;
@@ -292,7 +294,7 @@ p{
     text-transform: uppercase;
     margin-bottom: 15px;
 }
-.item__job{
+.team__card--job{
     font-family:'Roboto', sans-serif;
     font-size: 15px;
     text-align: center;
