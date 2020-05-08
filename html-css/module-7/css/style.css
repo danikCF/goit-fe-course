@@ -169,6 +169,9 @@ html {
 .textarea1{
     height: 170px;
 }
+textarea{
+    resize: none;
+}
 .submit{
     margin-top: 25px;
     padding: 20px 35px;

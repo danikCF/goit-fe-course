@@ -214,7 +214,6 @@ width: 100%;
 display: block;
 }
 .product__actions-window {
-    position: S;
     position: absolute;
     top: 10px;
     left: 10px;
