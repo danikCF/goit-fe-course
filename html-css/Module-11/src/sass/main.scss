@@ -1,12 +1,12 @@
 /*
  * Все паршалы импортировать в этот файл
  */
- @import 'normalize.scss';
- @import 'variebels.scss';
- @import 'base.scss';
- @import 'fonts.scss';
- @import 'header.scss';
- @import 'section0.scss';
- @import 'services.scss';
- @import 'team.scss';
- @import 'footer.scss';
+ @import '../sass/normalize.scss';
+ @import '../sass/variebles.scss';
+ @import '../sass/components/fonts.scss'; 
+ @import '../sass/base.scss';
+ @import '../sass/components/header.scss';
+ @import '../sass/components/section0.scss';
+ @import '../sass/components/services.scss';
+ @import '../sass/components/team.scss';
+ @import '../sass/components/footer.scss'; 
