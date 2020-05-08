@@ -1,0 +1,47 @@
+.footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-top: 1px solid $footer-color;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+  
+  &__text{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    vertical-align: middle;
+    color: $dark-color;
+    font-size: 14px;
+    font-family: $montserrat-fonts;
+  }
+  &__forms{
+    margin-left: 0 auto;
+    padding-bottom: 5px;
+  }
+  &__form--placeholder{
+    height: 35px;
+    color: $placeholder-color;
+    font-size: 14px;
+    font-family:'Roboto', sans-serif;
+    font-style: oblique;
+  }
+  &__form--submit{
+    width: 150px;
+    height: 41px;
+    border: none;
+    background-color:$blue-color; ;
+    text-transform: uppercase;
+    color:$white-color;
+    font-size: 14px;
+    font-weight: 500;
+    font-family:$montserrat-fonts;
+  }
+  }

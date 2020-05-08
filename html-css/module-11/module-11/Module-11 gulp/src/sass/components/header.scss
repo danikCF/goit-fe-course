@@ -1,0 +1,55 @@
+.header{
+    padding-top: 30px;
+    padding-bottom: 60px;
+  
+    &__logo{
+      color: $white-color; 
+      font-family: $montserrat-fonts;
+      font-size: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
+    }
+    &__nav__list{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    }
+    &__nav-item{
+      margin-right: 55px;
+    }
+    &__nav-item:last-child{
+      margin-right: 0;
+    }
+    &__nav-link{
+      display: block;
+      font-family: $montserrat-fonts;
+      color: $white-color;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      text-transform: uppercase;
+      -webkit-transition: color 200ms linear;
+      -o-transition: color 200ms linear;
+      transition: color 200ms linear;
+    }
+    &__nav-link::after{
+    content: '';
+      display: block;
+      width: 48px;
+      height: 4px;
+      margin: 10px auto 0;
+      background-color: $yellow-color;
+      opacity: 0;
+    
+    &:hover::after{
+      opacity: 1;
+    }
+    &:hover{
+      color: $yellow-color;
+    }
+}
+    &__svg:hover{
+      fill: $yellow-color;
+    }
+  }

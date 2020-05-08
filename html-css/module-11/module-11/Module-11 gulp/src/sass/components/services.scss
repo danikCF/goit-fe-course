@@ -1,0 +1,85 @@
+.services {
+    width: 100%;
+    max-width: 1193px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  
+    &__title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: $kaushan-fonts;
+    font-size: 24px;
+    color: $dark-color;
+    }
+    &__title2 {
+      font-family: $montserrat-fonts;
+      font-size: 30px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: $dark-color;
+      margin-top: 15px;
+      &::after {
+      content: '';
+      display:-webkit-box;
+      display:-ms-flexbox;
+      display:flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+        width: 61px;
+       height: 4px;
+        margin: 30px auto 0;
+        background-color: $pink-color;
+      }
+     &__list{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 60px;
+      }
+      &__item{
+        position: relative;
+        width: 330px;
+        padding-left: 60px;
+        margin-bottom: 50px;
+      }
+    &__icon{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        display: inline-block;
+        content: '';
+        width: 40px;
+        height: 40px;
+      }
+     &__icon__title{
+        margin-bottom: 10px;
+        color: $dark-color;
+        font-family: $montserrat-fonts;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      &__icon__text{
+        color: $grey-color;
+        font-family: $roboto-fonts;
+        font-size: 15px;
+     }
+   } 
+  }
+  
